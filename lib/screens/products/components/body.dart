@@ -5,11 +5,13 @@ import 'package:shop_app/screens/products/components/product_details.dart';
 import '../products.dart';
 
 class Products extends StatefulWidget {
+  static String routeName = "/products";
+
   @override
-  _HomePageState createState() => _HomePageState();
+  _ProductsState createState() => _ProductsState();
 }
 
-class _HomePageState extends State<Products> {
+class _ProductsState extends State<Products> {
   int activeMenu = 0;
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/product_card.dart';
 import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/screens/products/components/body.dart';
 
 import '../../../size_config.dart';
 import 'section_title.dart';
@@ -16,7 +17,7 @@ class PopularProducts extends StatelessWidget {
           child: SectionTitle(
               title: "Near Your Location",
               press: () {
-                Navigator.pushNamed(context, SectionTitle.routName);
+                Navigator.pushNamed(context, Products.routeName);
               }),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
