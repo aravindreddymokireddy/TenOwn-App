@@ -13,7 +13,11 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: SectionTitle(title: "Near Your Location", press: () {}),
+          child: SectionTitle(
+              title: "Near Your Location",
+              press: () {
+                Navigator.pushNamed(context, SectionTitle.routName);
+              }),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(

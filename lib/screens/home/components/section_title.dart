@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 
 class SectionTitle extends StatelessWidget {
+  static var routName;
+
   const SectionTitle({
     Key key,
     @required this.title,
